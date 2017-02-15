@@ -39,13 +39,16 @@ main_major{
     left:50px;
     top:240px;
 }
-
+#menu { 
+    visibility:hidden;
+}
 main_menu{
     font-family:DINPro-Medium;
     font-size:24px;
     color:#000000;
     letter-spacing:0px;
     text-align:left;
+    
 }
 
 main_paragraph{
@@ -82,7 +85,7 @@ main_menu:click{
     letter-spacing:0px;
     text-align:left;
 }
-menu_icon{
+main_icon{
     font-family:DINPro-Black;
     font-size:24px;
     color:#00000;
@@ -90,24 +93,26 @@ menu_icon{
     text-align:left;
     position:absolute;
     top:172px;
-    left: 1320px;
+    z-index:2000;
+    
 }
-menu_icon:hover{
+main_icon:hover{
     font-family:DINPro-Black;
     font-size:24px;
     color:#ff4081;
     letter-spacing:0px;
     text-align:left;
 }
-#img_decoration {
- display:block;
- position:fixed;
- top:147px;
- left:50px;
- border:1px solid #fff;
- text-align:center;
- }
-
+main_icon:click{
+    font-family:DINPro-Black;
+    font-size:24px;
+    color:#f8e71c;
+    letter-spacing:0px;
+    text-align:left;
+}
+#rectangle{
+    
+}
 img {
     background: transparent;  
     max-width: 95%;

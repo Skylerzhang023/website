@@ -3,6 +3,7 @@
 <head>
     <title>Skyler Zhang website</title>
     <link rel="stylesheet" type="text/css" href="main.css" />
+    
 </head>
 <body>
 
@@ -22,14 +23,31 @@
             too frozenand take a photo like this,<br>
             loosing focus.However not so bad.</main_paragraph>
     </div>
+    
+   
     <div>
-        <div><menu_icon>MENU</menu_icon></div>
-        <a><main_menu style="position:absolute; left:514px;">Home</main_menu></a>
-        <main_menu style="position:absolute; left:620px;">Profile</main_menu>
-        <main_menu style="position:absolute; left:732px;">Game Resaerch</main_menu>
-        <main_menu style="position:absolute; left:942px;">About</main_menu>
-        <main_menu style="position:absolute; left:2046px;">Contact</main_menu>
-        <IMG src="./yellow-rectangle.png" border=0 width="209" height="88" style="position:absolute; left:1205px; top:164px; "></IMG>
+        <main_icon style="position:absolute;left: 1320px;"id="myBtn">MENU</main_icon>
+        <div id="menu">
+        <main_menu style="position:absolute; left:514px;">Home</main_menu>
+        <main_menu style="position:absolute; left:620px;" >Profile</main_menu>
+        <main_menu style="position:absolute; left:732px;" >Game Resaerch</main_menu>
+        <main_menu style="position:absolute; left:942px;" >About</main_menu>
+        <main_menu style="position:absolute; left:2046px;" >Contact</main_menu>
+        </div>
+        <IMG id="rectangle" src="./yellow-rectangle.png" border=0 width="209" height="88" style="position:absolute; left:1205px; top:164px;"></IMG>
     </div>
+     
+    <script>
+        document.getElementById("myBtn").onclick=function(){displayMenu();changecolor()};
+        function displayMenu()
+        {
+            document.getElementById("menu").style.visibility = "visible";
+        }
+        function changecolor()
+        {
+            document.getElementById("rectangle").src="./black-rectangle.png";
+            document.getElementById("myBtn").style.visibility="./black-rectangle.png";   
+        }
+    </script>
 </body>
 </html>
