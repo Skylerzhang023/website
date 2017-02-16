@@ -25,7 +25,7 @@
     </div>
     
    
-    <div>
+    <div >
         <main_icon style="position:absolute;left: 1320px;"id="myBtn">MENU</main_icon>
         <div id="menu">
         <main_menu style="position:absolute; left:514px;">Home</main_menu>
@@ -38,16 +38,21 @@
     </div>
      
     <script>
-        document.getElementById("myBtn").onclick=function(){displayMenu();changecolor()};
+        document.getElementById("myBtn").onmouseover=function(){displayMenu()};
         function displayMenu()
-        {
-            document.getElementById("menu").style.visibility = "visible";
+        {   if(document.getElementById("menu").style.visibility == "hidden"){
+                document.getElementById("menu").style.visibility = "visible";
+                document.getElementById("rectangle").src="./black-rectangle.png";
+                document.getElementById("myBtn").style.color="#ff4081";
+            }
+            else{
+                document.getElementById("menu").style.visibility = "hidden";
+                document.getElementById("rectangle").src="./yellow-rectangle.png";
+                document.getElementById("myBtn").style.color="#000000";
+            }
         }
-        function changecolor()
-        {
-            document.getElementById("rectangle").src="./black-rectangle.png";
-            document.getElementById("myBtn").style.color="#ff4081"   
-        }
+
+        
     </script>
 </body>
 </html>
