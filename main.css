@@ -1,6 +1,6 @@
 html {
     background: #FFFFFF;
-    max-height: 2000px;
+
 }
 
 
@@ -12,8 +12,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     margin: 0 auto;
-    max-width: 1440px;
-    max-height: 2000px;
+    max-height: 4000px;
     
 }
 @font-face {
@@ -62,6 +61,18 @@ main_paragraph{
     left:214px;
     top:574px;
 }
+main_word2{
+    font-family:DINPro-Medium;
+    font-size:24px;
+    color:#ff4081;
+    letter-spacing:0px;
+    line-height:25px;
+    text-align:left;
+    position:absolute;
+    left:221px;
+    top:1150px;
+    z-index:2000;
+}
 main_menu{
     font-family:DINPro-Medium;
     font-size:24px;
@@ -96,6 +107,12 @@ main_icon{
     z-index:2000;
     
 }
+#front_img{
+    z-index:3000;
+}
+#back_img{
+    z-index:1000;
+}
 main_icon:hover{
     font-family:DINPro-Black;
     font-size:24px;
@@ -115,7 +132,20 @@ main_icon:click{
 }
 img {
     background: transparent;  
-    max-width: 95%;
+    
+}
+contact
+{
+    font-family:DINPro-Regular;
+    font-size:20px;
+    color:#ffffff;
+    letter-spacing:0px;
+    line-height:30px;
+    text-align:right;
+    position:absolute;
+    right:53px;
+    top:1703px;
+    z-index:2000;
 }
 
 @keyframes colorize {
