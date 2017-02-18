@@ -25,6 +25,7 @@ menu{
     position:absolute;
     top:42px;
     margin:0px;
+    padding: 0px;
 }
 menu:hover{
     font-family:DINPro-Medium;
@@ -39,7 +40,10 @@ menu_underline{
     height:0px;
 }
 #one{
-    visibility:hidden;
+    border:3px solid #979797;
+    width:56px;
+    height:0px;
+    display:none;
 }
 #two{
     visibility:hidden;
@@ -53,3 +57,4 @@ menu_underline{
 #five{
     visibility:hidden;
 }
+#home{}
