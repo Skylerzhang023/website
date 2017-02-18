@@ -1,0 +1,55 @@
+html {
+    background: #FFFFFF;
+}
+body {
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-height: 4000px;
+    
+}
+@font-face {
+    font-family:'DINAlternate-Bold';
+    src: url('DINPro-Medium.otf');
+} 
+menu{
+    font-family:DINPro-Medium;
+    font-size:24px;
+    color:#000000;
+    letter-spacing:0px;
+    text-align:left;
+    position:absolute;
+    top:42px;
+    margin:0px;
+}
+menu:hover{
+    font-family:DINPro-Medium;
+    font-size:24px;
+    color:#ff4081;
+    letter-spacing:0px;
+    text-align:left;
+}
+menu_underline{
+    border:3px solid #979797;
+    width:65px;
+    height:0px;
+}
+#one{
+    visibility:hidden;
+}
+#two{
+    visibility:hidden;
+}
+#three{
+    visibility:hidden;
+}
+#four{
+    visibility:hidden;
+}
+#five{
+    visibility:hidden;
+}
