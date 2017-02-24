@@ -44,17 +44,30 @@ menu_underline{
     width:56px;
     height:0px;
     display:none;
+    
 }
 #two{
-    visibility:hidden;
+    border:3px solid #979797;
+    width:65px;
+    height:0px;
+    display:none;
 }
 #three{
-    visibility:hidden;
+    border:3px solid #979797;
+    width:163px;
+    height:0px;
+    display:none;
 }
 #four{
-    visibility:hidden;
+    border:3px solid #979797;
+    width:57px;
+    height:0px;
+    display:none;
 }
 #five{
-    visibility:hidden;
+    border:3px solid #979797;
+    width:75px;
+    height:0px;
+    display:none;
 }
 #home{}
