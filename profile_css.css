@@ -39,6 +39,32 @@ menu_underline{
     width:65px;
     height:0px;
 }
+stitle{
+    font-family:DINPro-Regular;
+    font-size:18px;
+    color:#000000;    
+}
+#1{position:absolute;
+    left:50px;
+    top:600px;}
+detail{
+    font-family:DINPro-Light;
+    font-size:18px;
+    color:#000000;
+    letter-spacing:0px;
+}
+inner_navi_active{
+    font-family:DINPro-Regular;
+    font-size:14px;
+    color:#4a4a4a;
+    letter-spacing:0px;
+}
+inner_navi_noactive{
+    font-family:DINPro-Regular;
+    font-size:14px;
+    color:#a2a2a2;
+    letter-spacing:0px;
+}
 #one{
     border:1px solid #979797;
     width:56px;
@@ -70,4 +96,3 @@ menu_underline{
     height:0px;
     display:none;
 }
-#home{}
