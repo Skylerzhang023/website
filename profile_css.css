@@ -40,32 +40,32 @@ menu_underline{
     height:0px;
 }
 #one{
-    border:3px solid #979797;
+    border:1px solid #979797;
     width:56px;
     height:0px;
     display:none;
     
 }
 #two{
-    border:3px solid #979797;
+    border:1px solid #979797;
     width:65px;
     height:0px;
     display:none;
 }
 #three{
-    border:3px solid #979797;
+    border:1px solid #979797;
     width:163px;
     height:0px;
     display:none;
 }
 #four{
-    border:3px solid #979797;
+    border:1px solid #979797;
     width:57px;
     height:0px;
     display:none;
 }
 #five{
-    border:3px solid #979797;
+    border:1px solid #979797;
     width:75px;
     height:0px;
     display:none;
