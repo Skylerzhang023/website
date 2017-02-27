@@ -17,10 +17,10 @@
         <IMG id="four" src="./four.png" style="position:absolute; left:558px; top:73px;"></IMG>
         <IMG id="five" src="./five.png" style="position:absolute; left:662px; top:73px;"></IMG>
         <a href="./index.html"><menu id="home" style="position:absolute; left:129px;">Home</menu></a>
-        <menu id="profile"style="position:absolute; left:234px;" >Profile</menu>
-        <menu id="game"style="position:absolute; left:347px;" >Game Resaerch</menu>
-        <menu id="about"style="position:absolute; left:558px;" >About</menu>
-        <menu id="contact"style="position:absolute; left:661px;" >Contact</menu>
+        <menu id="profile" style="position:absolute; left:234px;" >Profile</menu>
+        <menu id="game" style="position:absolute; left:347px;" >Game Resaerch</menu>
+        <menu id="about" style="position:absolute; left:558px;" >About</menu>
+        <menu id="contact" style="position:absolute; left:661px;" >Contact</menu>
     </div>
     <div>
         <IMG id="light" src="./light4.jpg" border=0 width="373" height="244" style="position:absolute; left:305px; top:154px;"></IMG>
@@ -50,12 +50,12 @@
     </div>
 
     <div>
-        <IMG src="./noactive.png" style="position:absolute; left:31px; top:747px;"></IMG>
-        <inner_navi_noactive style="position:absolute; left:76px; top:738px;" >Game</inner_navi_noactive>
-        <IMG src="./active.png" style="position:absolute; left:31px; top:780px;"></IMG>
-        <inner_navi_active style="position:absolute; left:76px; top:771px;" >Product</inner_navi_active>
-        <IMG src="./noactive.png" style="position:absolute; left:31px; top:813px;"></IMG>
-        <inner_navi_noactive style="position:absolute; left:76px; top:804px;" >Game</inner_navi_noactive>
+        <IMG id="gamenavi" src="./noactive.png" style="position:fixed; left:31px; top:600px;"></IMG>
+        <inner_navi_noactive id="game1" style="position:fixed; left:76px; top:590px;" >Game</inner_navi_noactive>
+        <IMG id="productnavi" src="./active.png" style="position:fixed; left:31px; top:633px;"></IMG>
+        <inner_navi_active id="product1" style="position:fixed; left:76px; top:623px;" >Product</inner_navi_active>
+        <IMG id="graphicnavi" src="./noactive.png" style="position:fixed; left:31px; top:666px;"></IMG>
+        <inner_navi_noactive id="graphic1" style="position:fixed; left:76px; top:656px;" >Graphic</inner_navi_noactive>
         
     </div>
         <script>  
@@ -107,6 +107,37 @@
         $("#contact").mouseout(
             function(){
                 $("#five").fadeOut(" ");
+            }
+        );
+            
+        $("#gamenavi").mouseover(
+            function(){
+                $("#gamenavi").attr("src", "./active.png");
+                $("#game1").css("color","#4a4a4a");
+                $("#productnavi").attr("src", "./noactive.png");
+                $("#product1").css("color","#a2a2a2");
+                $("#graphicnavi").attr("src", "./noactive.png");
+                $("#graphic1").css("color","#a2a2a2");
+            }
+        );
+        $("#productnavi").mouseover(
+            function(){
+                $("#productnavi").attr("src", "./active.png");
+                $("#product1").css("color","#4a4a4a");
+                $("#graphicnavi").attr("src", "./noactive.png");
+                $("#graphic1").css("color","#a2a2a2");
+                $("#gamenavi").attr("src", "./noactive.png");
+                $("#game1").css("color","#a2a2a2");
+            }
+        );
+        $("#graphicnavi").mouseover(
+            function(){
+                $("#graphicnavi").attr("src", "./active.png");
+                $("#graphic1").css("color","#4a4a4a");
+                $("#productnavi").attr("src", "./noactive.png");
+                $("#product1").css("color","#a2a2a2");
+                $("#gamenavi").attr("src", "./noactive.png");
+                $("#game1").css("color","#a2a2a2");
             }
         );
     </script>

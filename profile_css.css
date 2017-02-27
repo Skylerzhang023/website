@@ -2,7 +2,7 @@ html {
     background: #FFFFFF;
 }
 body {
-    background: #fff;
+    background: #ffffff;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
     color: #545454;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -57,13 +57,13 @@ inner_navi_active{
     font-family:DINPro-Regular;
     font-size:14px;
     color:#4a4a4a;
-    letter-spacing:0px;
+
 }
 inner_navi_noactive{
     font-family:DINPro-Regular;
     font-size:14px;
     color:#a2a2a2;
-    letter-spacing:0px;
+    
 }
 #one{
     border:1px solid #979797;
@@ -96,3 +96,6 @@ inner_navi_noactive{
     height:0px;
     display:none;
 }
+#game{}
+#game1{}
+
