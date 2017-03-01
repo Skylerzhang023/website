@@ -120,6 +120,26 @@
                 $("#graphic1").css("color","#a2a2a2");
             }
         );
+        $("#game1").mouseover(
+            function(){
+                $("#gamenavi").attr("src", "./active.png");
+                $("#game1").css("color","#4a4a4a");
+                $("#productnavi").attr("src", "./noactive.png");
+                $("#product1").css("color","#a2a2a2");
+                $("#graphicnavi").attr("src", "./noactive.png");
+                $("#graphic1").css("color","#a2a2a2");
+            }
+        );
+        $("#productnavi").mouseover(
+            function(){
+                $("#productnavi").attr("src", "./active.png");
+                $("#product1").css("color","#4a4a4a");
+                $("#graphicnavi").attr("src", "./noactive.png");
+                $("#graphic1").css("color","#a2a2a2");
+                $("#gamenavi").attr("src", "./noactive.png");
+                $("#game1").css("color","#a2a2a2");
+            }
+        );
         $("#productnavi").mouseover(
             function(){
                 $("#productnavi").attr("src", "./active.png");
