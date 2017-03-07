@@ -13,7 +13,7 @@ body {
     line-height: 1.5;
     margin: 0 auto;
     max-height: 4000px;
-    
+    z-index:1000;
 }
 @font-face {
     font-family:'DINAlternate-Bold';
@@ -21,12 +21,13 @@ body {
 }  
 main_head{
     font-family:DINAlternate-Bold;
-    font-size:64px;
+    font-size:48px;
     color:#000000;
     letter-spacing:0px;
     position:absolute;
-    left:50px;
-    top:60px;
+    left:370px;
+    top:164px;
+    z-index:1000;
 }
 main_major{
     font-family:DINPro-Medium;
@@ -37,9 +38,10 @@ main_major{
     position:absolute;
     left:50px;
     top:240px;
+    z-index:1000;
 }
 #menu { 
-    visibility:hidden;
+
 }
 main_menu{
     font-family:DINPro-Medium;
@@ -47,6 +49,7 @@ main_menu{
     color:#000000;
     letter-spacing:0px;
     text-align:left;
+    z-index:1000;
     
 }
 
@@ -60,6 +63,7 @@ main_paragraph{
     position:absolute;
     left:214px;
     top:574px;
+    z-index:1000;
 }
 main_word2{
     font-family:DINPro-Medium;
@@ -72,6 +76,7 @@ main_word2{
     left:221px;
     top:1150px;
     z-index:2000;
+    z-index:1000;
 }
 main_menu{
     font-family:DINPro-Medium;
@@ -80,7 +85,8 @@ main_menu{
     letter-spacing:0px;
     text-align:left;
     position:absolute;
-    top:170px;
+    top:94px;
+    z-index:1000;
 }
 main_menu:hover{
     font-family:DINPro-Medium;
@@ -88,6 +94,7 @@ main_menu:hover{
     color:#ff4081;
     letter-spacing:0px;
     text-align:left;
+    z-index:1000;
 }
 main_menu:click{
     font-family:DINPro-Medium;
@@ -95,6 +102,7 @@ main_menu:click{
     color:#f8e71c;
     letter-spacing:0px;
     text-align:left;
+    z-index:1000;
 }
 main_icon{
     font-family:DINPro-Black;
@@ -119,6 +127,7 @@ main_icon:hover{
     color:#f8e71c;
     letter-spacing:0px;
     text-align:left;
+    z-index:1000;
 }
 main_icon:click{
     font-family:DINPro-Black;
@@ -126,26 +135,41 @@ main_icon:click{
     color:#f8e71c;
     letter-spacing:0px;
     text-align:left;
+    z-index:1000;
 }
 #rectangle:hover{
     
 }
 img {
     background: transparent;  
-    
+    z-index:1000;
 }
 contact
 {
-    font-family:DINPro-Regular;
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);       /* IE 9 */
+    -webkit-transform: rotate(90deg);   /* Safari and Chrome */
+    -o-transform: rotate(90deg);        /* Opera */
+    -moz-transform: rotate(90deg);      /*firefox*/
+    font-family:DINPro-light;
     font-size:20px;
-    color:#ffffff;
+    color:#000000;
     letter-spacing:0px;
     line-height:30px;
     text-align:right;
-    position:absolute;
-    right:53px;
-    top:1703px;
-    z-index:2000;
+}
+#background-ellipese1{
+    opacity:0.82;
+    background:#ffcf24;
+    width:520px;
+    height:520px;
+    border-radius:100%;
+}
+#background-ellipese2{
+    opacity:0.82;
+    background:#ffcf24;
+    width:691px;
+    height:666px;
 }
 
 @keyframes colorize {
