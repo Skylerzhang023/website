@@ -3,11 +3,13 @@
 <head>
     <title>Skyler Zhang website</title>
     <link rel="stylesheet" type="text/css" href="main.css" />
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=0.6">
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     
 </head>
-<body>
-    
+<body id="zooming">
     <IMG src="./logo.png" border=0 width="62" height="62" style="position:absolute; left:116px; top:76px;"></IMG>
 <main_head >Skyler zhang</main_head>
     <div>
@@ -16,7 +18,7 @@
     </div>
     
     <div>
-        <IMG src="./image1.png" border=0 width="691" height="460" style="position:absolute; left:635px; top:345px;z-index:3000;"></IMG>
+        <IMG src="./image1.png" class="img-responsive" border=0 width="691" height="460" style="position:absolute; left:635px; top:345px;z-index:3000;"></IMG>
     </div>
     <div>
         <IMG id="ellipse1" src="./ellipse1.png" style="position:absolute; left:910px; top:40px;"></IMG>
@@ -52,7 +54,10 @@
                 document.getElementById("myBtn").style.color="#000000";
             }
         }
-
     </script>
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- 包括所有已编译的插件 -->
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

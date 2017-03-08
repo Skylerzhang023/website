@@ -2,7 +2,6 @@ html {
     background: #FFFFFF;
 }
 body {
-    transform: scale(0.9);
     background: #ffffff;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
     color: #545454;
@@ -12,6 +11,9 @@ body {
     margin: 0 auto;
     max-height: 4000px;
     
+}
+#zooming{
+     transform: scale(0.9);
 }
 @font-face {
     font-family:'DINAlternate-Bold';
