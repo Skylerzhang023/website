@@ -1,21 +1,42 @@
 html {
     background: #FFFFFF;
 }
-body {
+body{
     transform: scale(0.9);
     background: #ffffff;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
     color: #545454;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
-    line-height: 1.59
+    line-height: 1.5;
     margin: 0 auto;
     max-height: 4000px;
     
 }
-#zooming{
-     transform: scale(0.9);
+rec1{
+    border:10px solid #bdbdbd;
+    width:717px;
+    height:398px;}
+English_name
+{
+    font-family:DINPro-Black;
+    font-size:48px;
+    color:#ffd84c;
+    letter-spacing:0px;
 }
+chinese_name{
+    font-family:PingFangSC-Medium;
+    font-size:24px;
+    color:#ffd84c;
+    letter-spacing:0px;
+}
+intro{
+    font-family:DINPro-Light;
+    font-size:14px;
+    color:#000000;
+    letter-spacing:0px;
+}
+
 @font-face {
     font-family:'DINAlternate-Bold';
     src: url('DINPro-Medium.otf');
@@ -43,32 +64,6 @@ menu_underline{
     width:65px;
     height:0px;
 }
-stitle{
-    font-family:DINPro-Regular;
-    font-size:18px;
-    color:#000000;    
-}
-#1{position:absolute;
-    left:50px;
-    top:600px;}
-detail{
-    font-family:DINPro-Light;
-    font-size:18px;
-    color:#000000;
-    letter-spacing:0px;
-}
-inner_navi_active{
-    font-family:DINPro-Regular;
-    font-size:14px;
-    color:#4a4a4a;
-
-}
-inner_navi_noactive{
-    font-family:DINPro-Regular;
-    font-size:14px;
-    color:#a2a2a2;
-    
-}
 #one{
     border:1px solid #979797;
     width:56px;
@@ -86,6 +81,7 @@ inner_navi_noactive{
     border:1px solid #979797;
     width:163px;
     height:0px;
+    
     display:none;
 }
 #four{
@@ -100,6 +96,3 @@ inner_navi_noactive{
     height:0px;
     display:none;
 }
-#game{}
-#game1{}
-
