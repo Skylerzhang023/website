@@ -10,10 +10,14 @@
     <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>  
+    <script type="text/javascript" src="/jquery/jquery.js"></script>
+    <script src="./jquery-3.1.1.min.js"></script>
+
+    
 </head>
     
 <body> 
-    <IMG src="./logo.png" border=0 width="62" height="62" style="position:absolute; left:116px; top:76px;"></IMG>
+    <IMG id="logo" src="./logo.png" border=0 width="62" height="62" style="position:absolute; left:116px; top:76px;"></IMG>
     <main_head >Skyler zhang</main_head>
     <div>
         <IMG src="./bottomline.png" border=0 width="166" height="6" style="position:absolute; left:370px; top:234px; "></IMG>
@@ -28,37 +32,54 @@
         <IMG id="ellipse2" src="./ellipse2.png" style="position:absolute; left:-166px; top:224px;"></IMG>
     </div>
    
-    <div >
+    <div>
         <div id="menu">
             <a href="./index.html"><main_menu style="position:absolute; left:708px;">Home</main_menu></a>
             <a href="./profile.html"><main_menu style="position:absolute; left:813px;" >Portfolio</main_menu></a>
-            <a href="./game.html"><main_menu style="position:absolute; left:943px;" >Game Research</main_menu>
-            <a href="./About.html"><main_menu style="position:absolute; left:1154px;" >About</main_menu>
-            <a href="./contact.png"><main_menu style="position:absolute; left:1257px;" >Contact</main_menu>
+            <a href="./game.html"><main_menu style="position:absolute; left:943px;" >Game Research</main_menu></a>
+            <a href="./About.html"><main_menu style="position:absolute; left:1154px;" >About</main_menu></a>
+            <a href="./contact.png"><main_menu style="position:absolute; left:1257px;" >Contact</main_menu></a>
         </div>
     </div>
-    
+                  
     <IMG src="./contact.png" style="position:absolute; left:46px; top:325px;"></IMG>
+    
+    <script language="javascript" type="text/javascript">  
         
-
-     
-    <script>
-        document.getElementById("myBtn").onmouseover=function(){displayMenu()};
-        function displayMenu()
-        {  
-            if(document.getElementById("menu").style.visibility == "hidden"){
-                document.getElementById("menu").style.visibility = "visible";
-                document.getElementById("rectangle").src="./black-rectangle.png";
-                document.getElementById("myBtn").style.color="#ff4081";
-            }
-            else{
-                document.getElementById("menu").style.visibility = "hidden";
-                document.getElementById("rectangle").src="./yellow-rectangle.png";
-                document.getElementById("myBtn").style.color="#000000";
-            }
-        }
+        //获取图片div对象  
+        var img=document.getElementById("logo");  
+  
+        //设置div左上角 起始点坐标  
+        var x=0,y=0;  
+      
+        //设置图片的行进速度  
+        var xSpeed=5,ySpeed=5;  
+      
+        //设置图片的最大浮动高度和宽度  
+        var w=document.body.clientWidth-650,h=document.body.clientHeight-150;  
+      
+      
+        function floatimg(){  
+        //比较图片是否到达边界  
+      
+        //如果到达边界以后，我控制图片改变方向  
+        if(x>w||x<0) xSpeed= -xSpeed;       
+        if(y>h||y<0) ySpeed= -ySpeed;  
+    //如果没有到达边界，设置图片的左上角坐标，  
+      
+    //设置坐标值  起始坐标+速度  
+          
+        x+=xSpeed;  
+        y+=ySpeed;  
+      
+        //img.style.top=y+"px";  
+        img.style.left=x+"px";  
+      
+        setTimeout("floatimg()",50);  
+      
+        }  
+        floatimg();
     </script>
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    
 </body>
 </html>
